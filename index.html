@@ -1,0 +1,66 @@
+<style type= "text/css">
+body {
+    text-align: Center;
+    background-color: Black;
+    font: Times New Roman;
+}
+
+h1 {
+    font-size: 500%;
+    color: orange;
+    vertical-align: down;
+    background-image: url("https://service.mycontacts-app.com/contacts/static/img/start-page-image.png");
+    width: fill;
+    height: 25%;
+    text-align: center;
+}
+    
+p{
+    color: white;
+    font-size: 20px;
+}    
+ 
+input{
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: white;
+    color: brown;
+    height: 30px;
+}
+    
+#search {
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: brown;
+    color: white;
+    height: 30px;
+}    
+    
+button {
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: Red;
+    color: Blue;
+    height: 30px;
+}
+</style>
+
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Search My Contacts</h1>
+        <p>Use the search below and type the name who's contact info you wish to find. If I have that person's contact info, results will show up. If I do not, then no results will show up.</p>
+        <input type="text" id="name" placeholder="Name">
+        <button id="search">Search</button>
+    </body>
+</html>
+<script type="text/javascript">
+    document.querySelector("button").addEventListener("click", function() {
+        var myValue = document.getElementById('name').value;
+        
+        document.getElementById("search").onclick = function () {
+            window.location = "https://contacts.aarushmagic.com/_/search?query="+myValue+"&scope=site&showTabs=false";
+        };
+    })
+</script>
