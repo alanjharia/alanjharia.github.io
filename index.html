@@ -5,13 +5,15 @@ body {
     font: Times New Roman;
 }
 
-h1 {
+    h1{
     font-size: 500%;
+    
+    }
+#h {
     color: orange;
     vertical-align: down;
     background-image: url("https://service.mycontacts-app.com/contacts/static/img/start-page-image.png");
     width: fill;
-    height: 25%;
     text-align: center;
 }
     
@@ -49,7 +51,10 @@ button {
     <head>
     </head>
     <body>
-        <h1>Search My Contacts</h1>
+        <div id='h'>
+        <br>
+        <h1>Search My Contacts</h1><br>
+        </div>
         <p>Use the search below and type the name who's contact info you wish to find. If I have that person's contact info, results will show up. If I do not, then no results will show up.</p>
         <input type="text" id="name" placeholder="Name">
         <button id="search">Search</button>
